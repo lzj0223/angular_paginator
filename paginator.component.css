@@ -1,0 +1,67 @@
+.item-box{
+
+}
+.item-box span{
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height:26px;
+    border:1px solid #c3cad9;
+    border-radius: 2px;
+    margin:0 4px;
+    color:#6b798e;
+    font-size:12px;
+    cursor: pointer;
+}
+
+.item-box span.selected{
+    background-color: #358bf2;
+    color:#fff;
+    border-color:#358bf2;
+}
+
+.page-bar{
+    background-color: #fff;
+    padding:20px;
+}
+
+.page-bar .left{
+    color: #6b798e;
+    font-size: 12px;
+}
+.page-bar .left span{
+    line-height: 28px;
+    margin-right: 12px;
+}
+
+.page-bar select{
+    width: 65px;
+    border:1px solid #c3cad9;
+    border-radius: 2px;
+    text-indent: 10px;
+}
+
+.page-box{
+    max-width: 253px;
+    overflow: hidden;
+}
+
+.scroll-box{
+    position: relative;
+}
+
+.pre-btn{
+    margin-left:12px;
+}
+.pre-btn,.next-btn{
+    width: 28px;
+    background-color:#358bf2;
+    border: 1px solid #358bf2;
+    color:#fff;
+    border-radius:2px
+}
+.pre-btn[disabled],.next-btn[disabled]{
+    background-color: #ddd;
+    border:1px solid #ddd;
+}

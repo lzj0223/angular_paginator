@@ -1,0 +1,21 @@
+<div class="row page-bar">
+    <div class="left" style="flex:1;">
+        <span class="size-item">共{{total}}条记录</span>
+        <span class="page-item">共{{pageSize}}页</span>
+    </div>
+    <div class="right row">
+        <select [(ngModel)]="selectedLimit" (change)="setLimit()" >
+            <option [value]="item" *ngFor="let item of limitOptions" [selected]="item == selectedLimit">{{item}}</option>
+        </select>
+        <div class="item-box row">
+            <button class="pre-btn" (click)="goPre()" [disabled]="currentPage == 1"><</button>
+            <div class="page-box">
+                <div class="scroll-box row" [ngStyle]="{left:scrollLeft+'px'}">
+                    <span [ngClass]="{'selected':item == currentPage}" *ngFor="let item of pageList" (click)="selectedPage(item)">{{item}}</span>
+                </div>
+            </div>
+           <button class="next-btn" (click)="goNext()" [disabled]="currentPage == pageList.length">></button>
+        </div>
+    </div>
+</div>
+
